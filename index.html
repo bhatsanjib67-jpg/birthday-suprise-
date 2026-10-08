@@ -129,7 +129,7 @@ button:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 0 35px rgba(255
     <div class="message">
       <p id="typewriter"></p>
     </div>
-    <button onclick="go('memories')">There's more... 💌</button>
+    <button onclick="go('memories')">A few memories 📸</button>
   </div>
 </section>
 
@@ -154,7 +154,7 @@ button:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 0 35px rgba(255
       <span class="heart-letter">❤️</span>
     </div>
 
-    <p id="plushMessage">A tiny birthday message, just for you... 🥺💕</p>
+    <p id="plushMessage">A tiny teddy, with a very big birthday wish... 🥺💕</p>
     <button onclick="startPlush()">Make the teddy write it ✨</button>
     <br>
     <button onclick="go('heart')">Continue 💗</button>
@@ -179,10 +179,10 @@ button:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 0 35px rgba(255
     <button onclick="finalReveal()">Open it ❤️</button>
     <div id="finalMessage" style="display:none" class="fade">
       <p>
-        I hope this little surprise makes you smile. ❤️<br><br>
-        Happy Birthday! 🎂💕<br><br>
+        I hope this little surprise makes you smile as much as you make me smile. ❤️<br><br>
+        Happy Birthday, my favorite person! 🎂💕<br><br>
         May this year bring you countless beautiful moments,
-        happiness, laughter, and memories you'll always remember.
+        happiness, laughter, and many more beautiful memories together.
       </p>
       <div style="font-size:4rem">💖✨🎉✨💖</div>
     </div>
@@ -191,20 +191,12 @@ button:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 0 35px rgba(255
 
 <script>
 const birthdayText =
-"Happy Birthday babyyyy! ❤️\\n\\n" +
-  "Happy Birthday to the most special girl in my life! ❤️🎂
-
-"I’m honestly so lucky to have you. You make my days better just by being there, and I’m really grateful for every moment we share. 🥹❤️.\\n\\n" +
-  
-"I hope this birthday brings you endless happiness, lots of smiles, and everything you’ve ever wished for. Hamesha aise hi smile karti rehna,because your smile is my favorite. 🫶✨.\\n\\n" +
-  
-"Thank you for being you. I hope we make many more beautiful memories together. ❤️.\\n\\n" +
-  
-"Happy Birthday, my favorite person! 🎂💗 Love you so much! 🫶.\\n\\n" +
-  
-"I hope your day is filled with happiness, laughter, and beautiful moments.\\n\\n" +
-"You deserve all the good things in the world, and I hope this little surprise makes your day a little more special.\\n\\n" +
-"Keep smiling, keep being amazing, and never forget how special you are for me. 💕";
+"Happy Birthday to the most special girl in my life! ❤️🎂\\n\\n" +
+"I’m honestly so lucky to have you. You make my days better just by being there, and I’m really grateful for every moment we share. 🥹❤️\\n\\n" +
+"I hope this birthday brings you endless happiness, lots of smiles, and everything you’ve ever wished for. Hamesha aise hi smile karti rehna, because your smile is my favorite. 🫶✨\\n\\n" +
+"Thank you for being you. I hope we make many more beautiful memories together. ❤️\\n\\n" +
+"Happy Birthday, my favorite person! 🎂💗\\n\\n" +
+"Love you so much! 🫶";
 
 function go(id){
   document.getElementById(id).scrollIntoView({behavior:"smooth"});
@@ -280,7 +272,7 @@ function startPlush(){
   });
   setTimeout(() => {
     document.getElementById("plushMessage").textContent =
-      "Happy Birthday! You deserve all the smiles in the world. 🎂💕";
+      "Happy Birthday, my favorite person! You deserve all the smiles in the world. Love you so much! 🎂💗🫶";
   }, letters.length * 150 + 400);
 }
 
